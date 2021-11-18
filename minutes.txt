@@ -1,0 +1,32 @@
+
+
+
+11/17 Daily Standup
+
+Tavis:
+   Did yesterday: Courses, 3 challenges implementation
+   Roadblocks: Ever met github into right places
+   Will do: New courses, Project 0
+
+John:
+   Did yesterday: Courses, 3 challenges implementation
+   Roadblocks: None
+   Will do: New courses, Project 0
+
+David:
+   Did yesterday: Courses, 3 challenges implementation
+   Roadblocks: None
+   Will do: New courses, Project 0
+
+Supriya:
+   Did yesterday: Courses, 3 challenges implementation
+   Roadblocks: None
+   Will do: New courses, Project 0
+
+Yuhong:
+   Did yesterday: Courses, 3 challenges implementation
+   Roadblocks: None
+   Will do: New courses, Project 0
+
+Actions: 1. Team public Repository, Yuhong will generate one for all to start to use
+              2. Topics discusses, project 0 requirements need to ask Jared.
