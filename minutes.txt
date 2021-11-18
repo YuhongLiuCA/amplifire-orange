@@ -1,3 +1,27 @@
+11/18 Daily Standup
+
+John:
+   Did yesterday: Courses, prepare for Project and challenges. Project will be Custom Keyboard related
+   Roadblocks: None
+   Will do: New courses, Project 0
+
+David:
+   Did yesterday: Courses, main effort as challenges implementation such as pictures, change colors etc. Project will be truck cars related
+   Roadblocks: None
+   Will do: New courses, Project 0, some questions may need to ask Jared
+
+Supriya:
+   Did yesterday: Courses, main effort as challenges implementation. Project will be College/University learning-related
+   Roadblocks: None
+   Will do: New courses, Project 0
+
+Yuhong:
+   Did yesterday: Courses, main effort as challenges implementation. Project will be an online Grocery website-related
+   Roadblocks: None
+   Will do: New courses, Project 0
+
+Actions: 1. Team public Repository share with Jared. - Yuhong - Target time: today(11/18)
+
 
 
 
