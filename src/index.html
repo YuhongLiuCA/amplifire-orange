@@ -1,0 +1,41 @@
+<!--
+    In order to use SLDS with LWC OSS, we need to do some configuration:
+    - Run "npm install @salesforce-ux/design-system" in order to install SLDS to your project
+    - The current version of SLDS relies on the synthetic Shadow DOM to work. We don't need to really understand the difference here at this point
+      - Run "npm install @lwc/synthetic-shadow" in order to get the synthetic shadow functionality
+    - Next, we need to configure the location of the css document to be somewhere more... manageable.
+      - In your "lwc-services.config.js", add the following object to the resources array:
+        - { from: 'node_modules/@salesforce-ux/design-system/assets', to: 'dist/resources/slds' }
+    - Next, add the link to the stylesheet in your index.html:
+      - <link rel="stylesheet" href="/resources/slds/styles/salesforce-lightning-design-system.min.css">
+    - Finally, at the top of your index.js, import the synthetic shadow functionality:
+      - import '@lwc/synthetic-shadow';
+    
+    Congratulations! You're now configured to use SLDS styles in your project!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My LWC App</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <!-- Block zoom -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <link rel="shortcut icon" href="./resources/favicon.ico" />
+        <link rel="stylesheet" href="/resources/slds/styles/salesforce-lightning-design-system.min.css">    
+        
+    </head>
+    <body>
+        
+        <div id="main"></div>
+        
+    </body>
+</html>
