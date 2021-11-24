@@ -1,0 +1,29 @@
+<template>
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+
+            <button class="slds-button slds-button_icon slds-button_icon-border-filled slds-button_icon-x-large" aria-haspopup="true" tabindex="-1" title="More actions for Acme - 1,200 Widgets">
+              <img src={fruitItem.image} />
+            </button> 
+
+            <div class="slds-media__body">
+              <h2 class="slds-card__header-title">
+                <a href="#" class="slds-card__header-link slds-truncate" title="Accounts">
+                  <span>{fruitItem.name}</span>
+                </a>
+              </h2>
+            </div>
+            <!--<div class="slds-no-flex">
+              <button class="slds-button slds-button_neutral">New</button>
+            </div> -->
+          </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">{fruitItem.price}</div>
+        <footer class="slds-card__footer">
+            <button class="slds-button slds-button_brand" id={fruitItem.inc} onclick={addFruitItem}>+</button>
+            <span>{fruitItem.quantity}</span>
+            <button class="slds-button slds-button_brand" id={fruitItem.dec} onclick={removeFruitItem}>-</button>
+        </footer>
+    </article>
+</template>

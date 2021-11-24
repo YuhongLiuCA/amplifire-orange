@@ -2,20 +2,50 @@ import { LightningElement,track } from 'lwc';
 
 export default class App extends LightningElement {
 
-    @track     fruits = [];
+    @track     fruits = [{name: "Apple",image:"Apple.jpg",price:2.75,quantity:0,inc:"AppleInc",dec:"AppleDec",category:"NewArrival"},
+    {name: "Pear",image:"Pear.jpg",price:1.75,quantity:0,inc:"PearInc",dec:"PearDec",category:"BestSeller"},
+    {name: "Banana",image:"Bananas.jpg",price:0.99,quantity:0,inc:"BananaInc",dec:"BananaDec",category:"OnSale"},
+    {name: "Orange",image:"Oranges.jpg",price:1.09,quantity:0,inc:"OrangeInc",dec:"OrangeDec",category:"OnSale"},
+    {name: "Grape",image:"Grapes.jpg",price:3.99,quantity:0,inc:"GrapeInc",dec:"GrapeDec",category:""}
+    ];
 
     @track    cart = [];
 
     cartNumber = 0;
     sortingMethod = 1;
 
-    connectedCallback() {
-        this.fruits = [{name: "Apple",image:"Apple.jpg",price:2.75,quantity:0,inc:"AppleInc",dec:"AppleDec"},
-        {name: "Pear",image:"Pear.jpg",price:1.75,quantity:0,inc:"PearInc",dec:"PearDec"},
-        {name: "Banana",image:"Bananas.jpg",price:0.99,quantity:0,inc:"BananaInc",dec:"BananaDec"},
-        {name: "Orange",image:"Oranges.jpg",price:1.09,quantity:0,inc:"OrangeInc",dec:"OrangeDec"},
-        {name: "Grape",image:"Grapes.jpg",price:3.99,quantity:0,inc:"GrapeInc",dec:"GrapeDec"}
-        ];
+    @track category = "All";
+
+    @track displayList = [...this.fruits];
+
+    changeCategory(event) {
+        let cat = event.detail;
+        this.displayList = [];
+        if(cat.indexOf("category") !== -1) {
+            this.category = "All";
+            this.displayList = [...this.fruits];
+        } else if(cat.indexOf("newarrival") !== -1) {
+            this.category = "NewArrival";
+            for(let i = 0; i < this.fruits.length; i++) {
+                if(this.fruits[i].category === "NewArrival") {
+                    this.displayList.push(this.fruits[i]);
+                }
+            }
+        } else if(cat.indexOf("bestseller") !== -1) {
+            this.category = "BestSeller";
+            for(let i = 0; i < this.fruits.length; i++) {
+                if(this.fruits[i].category === "BestSeller") {
+                    this.displayList.push(this.fruits[i]);
+                }
+            }
+        } else if(cat.indexOf("onsale") !== -1) {
+            this.category = "OnSale";
+            for(let i = 0; i < this.fruits.length; i++) {
+                if(this.fruits[i].category === "OnSale") {
+                    this.displayList.push(this.fruits[i]);
+                }
+            }
+        } 
     }
 
     handleSortingChange(event) {
@@ -44,9 +74,8 @@ export default class App extends LightningElement {
     }
 
     addFruitItem(event) {
-        let itemId = event.target.id;
-        let index = itemId.indexOf("Inc");
-        let itemName = itemId.substring(0,index);
+        let itemName = event.detail;
+        
         for(let i = 0; i < this.fruits.length; i++) {
             if(this.fruits[i].name === itemName) {
                 this.fruits[i].quantity++;
@@ -68,9 +97,7 @@ export default class App extends LightningElement {
     }
 
     removeFruitItem(event) {
-        let itemId = event.target.id;
-        let index = itemId.indexOf("Dec");
-        let itemName = itemId.substring(0,index);
+        let itemName = event.detail;
         for(let i = 0; i < this.fruits.length; i++) {
             if(this.fruits[i].name === itemName) {
                 if(this.fruits[i].quantity > 0) {

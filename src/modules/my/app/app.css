@@ -1,3 +1,6 @@
+html {
+    background-color: white;
+}
 .application-head {
     background-color: white;
     height: 8em;
@@ -8,4 +11,7 @@
 .fruitHeader {
     margin-top: 8em;
     margin-bottom: 2em;
+}
+.header-area {
+    background-color: white;
 }
