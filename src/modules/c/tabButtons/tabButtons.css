@@ -1,3 +1,7 @@
 .button_clicked {
-    background-color: blue;
+    font-weight: bold;
+    font-size: 1.4 em;
+}
+.category-group {
+    margin-left: 2rem;
 }

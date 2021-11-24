@@ -7,17 +7,17 @@
       <c-tab-buttons class="slds-col slds-size_2-of-3"></c-tab-buttons>
       <c-cart-buttons quantity={cartNumber} class="slds-col slds-size_1-of-3"></c-cart-buttons>
     </div>    
-    <hr />
+    
   </header>
 
 
 
-    <h2 class="slds-text-heading_medium fruitHeader">Fruits</h2> 
+    <h2 class="slds-text-heading_medium fruitHeader"><hr /></h2> 
     
     <div class="slds-grid slds-wrap">      
 
         <template iterator:it={displayList}>
-            <div class="slds-col slds-size_3-of-12" key={it.value.name} onadditem={addFruitItem} onremoveitem={removeFruitItem}>
+            <div class="slds-col slds-size_3-of-12 item-style" key={it.value.name} onadditem={addFruitItem} onremoveitem={removeFruitItem}>
               
               <c-shop-item fruit-item={it.value}></c-shop-item>
                            
