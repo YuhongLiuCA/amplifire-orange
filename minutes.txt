@@ -1,3 +1,61 @@
+11/24 Daily Standup
+
+John:
+   Did yesterday: Wireframe and project-related.
+   Roadblocks: None
+   Will do: Project
+
+Supriya:
+   Did yesterday: Shopping cart, project.
+   Roadblocks: None
+   Will do: Project
+
+David:
+   Did yesterday: Shopping cart, wireframe, project, and review.
+   Roadblocks: None
+   Will do: Project
+
+Travis:
+   Did yesterday: Wireframe, Trailhead
+   Roadblocks: None
+   Will do: Challenges and project
+
+Yuhong:
+   Did yesterday: Project front structure, conditional
+   Roadblocks: None
+   Will do: Project CSS style part
+
+
+11/23 Daily Standup
+
+John:
+   Did yesterday: Busy studing weekend, have a little rest yesterday. Project related.
+   Roadblocks: None
+   Will do: Project and challenges, Kanban board
+
+Supriya:
+   Did yesterday: Test and challenges.
+   Roadblocks: None
+   Will do: Project and challenges, Javascript related.
+
+David:
+   Did yesterday: Wireframe and design, LWC shell, trailhead
+   Roadblocks: None
+   Will do: Challenges and project
+
+Travis:
+   Did yesterday: Wireframe, Trailhead
+   Roadblocks: None
+   Will do: Challenges and project
+
+Yuhong:
+   Did yesterday: Wireframe and project
+   Roadblocks: None
+   Will do: Project
+
+Action: 1. Kanban solution to ask Jared
+
+
 11/19 Daily Standup
 
 Supriya:
@@ -25,7 +83,7 @@ Yuhong:
    Roadblocks: LWC new application issue, solved by reinstalling node.js
    Will do: Challenges and project this weekend
 
-   
+
 11/18 Daily Standup
 
 John:
@@ -48,37 +106,4 @@ Yuhong:
    Roadblocks: None
    Will do: New courses, Project 0
 
-Actions: 1. Team public Repository share with Jared. - Yuhong - Target time: today(11/18).
-
-
-
-
-11/17 Daily Standup
-
-Tavis:
-   Did yesterday: Courses, 3 challenges implementation
-   Roadblocks: Ever met github into right places
-   Will do: New courses, Project 0
-
-John:
-   Did yesterday: Courses, 3 challenges implementation
-   Roadblocks: None
-   Will do: New courses, Project 0
-
-David:
-   Did yesterday: Courses, 3 challenges implementation
-   Roadblocks: None
-   Will do: New courses, Project 0
-
-Supriya:
-   Did yesterday: Courses, 3 challenges implementation
-   Roadblocks: None
-   Will do: New courses, Project 0
-
-Yuhong:
-   Did yesterday: Courses, 3 challenges implementation
-   Roadblocks: None
-   Will do: New courses, Project 0
-
-Actions: 1. Team public Repository, Yuhong will generate one for all to start to use
-              2. Topics discusses, project 0 requirements need to ask Jared.
+Actions: 1. Team public Repository share with Jared. - Yuhong - Target time: today(11/18)
