@@ -1,0 +1,26 @@
+<template>
+    <div style="border-bottom: 1px solid coral;">
+        <span>
+            Phone: 111-111-1111<br>TollFree No: 1-800-222-2345<br>Email: info@phoenix.com
+        </span>
+    </div>
+    <br><br>
+    <span>{displayResponseMessage}</span>
+    <template if:true={displayForm}>
+        <form action="#" method="post" onsubmit={handleSubmit}>
+            <div class="slds-form-element">
+            <label class="slds-form-element__label" for="fname">First name: *</label>
+            <input class="slds-form-element__control" type="text" id="fname" name="fname" placeholder="Enter your First Name" required><br><br>
+            <label class="slds-form-element__label" for="lname">Last name: *</label>
+            <input class="slds-form-element__control" type="text" id="lname" name="lname" placeholder="Enter your Last Name" required><br><br>
+            <label class="slds-form-element__label" for="email">Email: *</label>
+            <input class="slds-form-element__control" type="email" placeholder="Enter your Email" required><br><br>
+            <label class="slds-form-element__label" for="phone">Phone: *</label>
+            <input class="slds-form-element__control" type="text" id="phone" name="phone" placeholder="Enter your Phone" required><br><br>
+            <label class="slds-form-element__label" for="question">Your Question: *</label>
+            <textarea id="question" name="question" rows="4" cols="50" placeholder="Enter your Question" required></textarea><br><br>
+            <input class="slds-button slds-button_neutral buttonStyle" style="margin-left:120px" type="submit" value="Submit">
+            </div>
+        </form>
+    </template>
+</template>

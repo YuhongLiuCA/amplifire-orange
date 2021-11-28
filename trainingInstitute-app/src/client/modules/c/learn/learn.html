@@ -1,0 +1,103 @@
+<template>
+   
+    <!--List of buttons to display different sections on click-->
+    <div style="padding: 2px; background-color: black; opacity: 70%">
+        <button type="button" class="slds-button slds-button_neutral buttonStyle"  onclick={handleHomeClicked}>Home</button>
+        <button type="button" class="slds-button slds-button_neutral buttonStyle" onclick={displayCourseAndFaculty}>Course/Faculties</button>
+        <button type="button" class="slds-button slds-button_neutral buttonStyle" onclick={handleReviewClicked}>Reviews</button> 
+        <button type="button" class="slds-button slds-button_neutral buttonStyle" onclick={handleContactClicked}>Contact Us</button> 
+        <button type="button" class="slds-button slds-button_neutral buttonStyle" onclick={handleFunClicked}>Fun Stuff</button>    
+    </div>
+    <br>
+    <!--Home section display -->
+    <template if:true={displayIntro}>
+        <div class="borderDisplay backgroundImage">
+            <span class="spanStyle">{homeContent}</span>
+            <div class="slds-grid slds-gutters"  style="margin:10px">
+                <template for:each={homeItems} for:item="item" for:index="index">
+                    <div class="slds-col blockDispCommon blockDispHome" key={item.heading}>
+                        <c-learnblock 
+                            data-index={index} 
+                            item-heading={item.heading} 
+                            item-body={item.body}>         
+                        </c-learnblock>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </template>
+    
+    <!--Section to display various Courses types-->
+    <template if:true={displayCourseStream}>
+        <div class="slds-grid slds-gutters" style="margin:10px">
+            <template for:each={courseStream} for:item="item" for:index="index">
+                <div class="slds-col blockDispCommon blockDispCourses" key={item.heading} onstreamselect={handleCourseStream}>
+                    <c-learnblock 
+                        data-index={index} 
+                        item-heading={item.heading} 
+                        item-body={item.body}
+                        displaybuttons>         
+                    </c-learnblock>
+                </div>
+            </template>
+        </div>
+    </template>
+    
+    <!--Section to List Courses/Faculties based on Course Type-->
+    <template if:true={displayDetails}>
+        <div class="slds-grid slds-grid_vertical">
+            <span class="spanStyle">
+                Course Category: {courseType}
+            </span>
+            <template for:each={detailitems} for:item="item" for:index="index">
+                <div class="slds-col detailRowDisp" key={item.name}>
+                    <c-courseitems 
+                        data-index={index} 
+                        item-name={item.name} 
+                        item-summary={item.summary}
+                        item-details={item.details}>
+                    </c-courseitems>
+                </div>
+            </template>  
+        </div>
+    </template>
+
+     <!--Review section display -->
+     <template if:true={displayReview}>
+        <div class="borderDisplay">
+            <span class="spanStyle">{homeContent}</span>
+            <div class="slds-grid slds-gutters"  style="margin:10px">
+                <template for:each={reviewItems} for:item="item" for:index="index">
+                    <div class="slds-col blockDispCommon blockDispHome" key={item.heading}>
+                        <c-learnblock 
+                            data-index={index} 
+                            item-heading={item.heading} 
+                            item-body={item.body}>         
+                        </c-learnblock>
+                    </div>
+                </template>
+            </div>
+        </div>
+     </template>
+
+     <!--Contact us section display -->
+     <template if:true={displayContact}>
+        <div class="borderDisplay">
+            <span class="spanStyle">{homeContent}</span>
+            <br><br>
+            <c-contact></c-contact>
+        </div>
+     </template>
+
+     <!--Fun Stuff section display -->
+     <template if:true={displayFunStuff}>
+        <div class="borderDisplay">
+            <span class="spanStyle">{homeContent}</span>
+            <br><br>
+            <c-misc></c-misc>
+        </div>
+     </template>
+
+</template>
+
+

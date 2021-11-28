@@ -1,0 +1,25 @@
+.labelStyle{
+    float: left; 
+    text-align: center;
+    border-right: 1px solid white;
+    font-weight: bold;
+}
+
+.iconContainer{
+    margin-right: 75px; 
+    margin-top:3px;  
+    margin-bottom:3px; 
+    float:right; 
+    border: 1px solid white; /* white border */
+    border-radius: 2px;  /* Rounded border */
+    padding: 2px; /* Some padding */
+    width: 25px; /* Set a small width */
+    height: 25px;
+}
+
+.itemdetail{
+    border-top: 1px solid white;
+    padding-left: 50px; 
+    text-align: left;
+    font-style: italic;
+}

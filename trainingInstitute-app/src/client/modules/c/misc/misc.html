@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <button class="slds-button slds-button_neutral buttonStyle" onclick={getCatImage}>Click Me!</button>
+    </div>
+    <br><br>
+    <div style="width: 180px; min-height: 180px; border: 2px solid coral">
+        <template if:true={displayImage}>
+            <img class="iconContainer" src={catImageUrl} alt="Display Cat Image" />
+        </template>
+    </div>
+</template>

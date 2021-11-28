@@ -1,0 +1,15 @@
+
+.headTitle{
+    margin-left: 300px;
+    font-size: 40px;
+    color: white;
+    font-style: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.logo{
+    height:80px; 
+    width:auto; 
+    margin:0px
+}

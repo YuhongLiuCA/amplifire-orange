@@ -1,0 +1,9 @@
+@import 'cssLibrary/common';
+
+.iconContainer{
+    border: 1px solid white; /* white border */
+    border-radius: 2px;  /* Rounded border */
+    padding: 2px; /* Some padding */
+    width: 180px; /* Set a small width */
+    height: 180px;
+}

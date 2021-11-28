@@ -1,0 +1,11 @@
+<template>
+
+    <div class="blocks">
+        <p><span style="font-size: 1.25em">{itemHeading}</span></p>
+        <p style="border-top-style: solid; width:100%;padding: 20px">{itemBody}</p>
+        <template if:true={displaybuttons}>
+             <button value="Courses" class="slds-button slds-button_neutral buttonStyle" onclick={handleStreamSelect}>List Courses</button>
+             <button value="Faculty" class="slds-button slds-button_neutral buttonStyle" onclick={handleStreamSelect}>List Faculties</button>
+        </template>
+    </div>
+</template>

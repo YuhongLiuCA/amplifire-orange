@@ -1,0 +1,53 @@
+/* Section for display of courses types */
+@import 'cssLibrary/common';
+
+.blockDispCommon{
+    display: block;
+    background-color:coral;
+    color: white;
+    border: solid;
+    border-color: snow;
+    border-radius: 10px;
+}
+
+.blockDispCourses{
+    height: 10rem; 
+    width: 10rem;
+    padding: 10px;
+    margin:30px;
+}
+
+/* Section for display of cards for Home/Review */
+.blockDispHome{
+    height: 15rem; 
+    width: 10rem;
+    padding: 5px;
+    margin:5px;
+}
+
+.blockDispCourses:hover {
+    outline: 1px solid blue;
+}
+
+.blockDispHome:hover {
+    outline: 1px solid blue;
+}
+
+/* Section for the div listing courses/faculties */
+.detailRowDisp{
+    min-height: 5px; 
+    overflow: hidden; 
+    background-color:coral;
+    color: white;
+    margin:2px;
+    border: solid;
+    border-color: snow;
+    border-radius: 10px;
+}
+
+.spanStyle{
+    padding: 5px; 
+    font-size: 1.25em; 
+    color: coral;
+    font-style: italic;
+}

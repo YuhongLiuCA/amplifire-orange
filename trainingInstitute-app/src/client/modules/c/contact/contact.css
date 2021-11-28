@@ -1,0 +1,20 @@
+@import 'cssLibrary/common';
+
+textarea:invalid,input:invalid {
+    border: 2px dashed red;
+  }
+  
+textarea:invalid:required, input:invalid:required {
+    background-image: linear-gradient(to right, lightpink, pink);
+  }
+  
+textarea:valid, input:valid {
+    border: 2px solid black;
+}
+
+label{
+    width: 120px;
+    float: left;
+    text-align: right;
+    font-size: 14px;
+}

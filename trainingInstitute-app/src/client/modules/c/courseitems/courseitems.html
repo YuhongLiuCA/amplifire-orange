@@ -1,0 +1,15 @@
+<template>
+
+<div>
+    <label class="labelStyle" style="width: 250px">{itemName}</label>
+    <label class="labelStyle" style="width: 800px">{itemSummary}</label>
+    <img class="iconContainer" src={detailToggleIcon} alt={detailToggleText} onclick={handleShowDetails} />
+    <template if:true={showDetails}>
+        <div style="padding-top: 20px">
+            <br><p class="itemdetail">{itemDetails}</p><br>
+        </div>
+    </template>
+
+</div>
+
+</template>
