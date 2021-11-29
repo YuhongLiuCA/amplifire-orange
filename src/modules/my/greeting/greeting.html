@@ -1,5 +1,15 @@
 <template>
-    <div class={animationClass} onanimationend={handleAnimationEnd}>
-        <span class="greet">{greeting}</span>
+    <div class="slds-grid" if:false={shouldDelete}>
+        <div class="slds-col">
+            <p>{item}</p>
+        </div>
+        <div class ="slds-col">
+            <span onclick={deleteItem} class="slds-icon_container slds-icon-utility-delete" title="delete">
+                <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                  <use xlink:href="/resources/slds/icons/utility-sprite/svg/symbols.svg#delete"></use>
+                </svg>
+                <span class="slds-assistive-text">Description of icon when needed</span>
+              </span>
+        </div>
     </div>
 </template>

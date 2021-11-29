@@ -1,1 +1,12 @@
+.descript {
+	text-align: center;
+	margin: 10px;
+	font-size: 150%;
+}
 
+img {
+	display: block;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}

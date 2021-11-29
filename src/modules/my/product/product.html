@@ -1,3 +1,71 @@
 <template>
-    <p>product</p>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_8-of-12 slds-grid-align-space ">
+            <div class="slds-grid slds-grid_vertical">
+                <div class="slds-col center">
+                    <h1>DIY Kits</h1>
+                </div>
+                <div class="slds-col">
+                    <div class="slds-grid">
+                        <div class="slds-col">
+                            <img src="/resources/65keeb.jpg" id="65%Keyboard" onclick={addItem}/>
+                            <p>65% Keyboard</p>
+                        </div>
+                        <div class="slds-col">
+                            <img src="/resources/75keeb.jpg" id="75%Keyboard" onclick={addItem}/>
+                            <p>75% Keyboard</p>
+                        </div>
+                        <div class="slds-col">
+                            <img src="/resources/80keeb.jpg" id="80%Keyboard" onclick={addItem}/>
+                            <p>80% Keyboard</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="slds-col">
+                    <h1>Switches</h1>
+                </div>
+                <div class="slds-col">
+                    <div class="slds-grid">
+                        <div class="slds-col">
+                            <img src="/resources/linswitch.jpg" alt="linear switch" />
+                            <p>Linear Switch</p>
+                        </div>
+                        <div class="slds-col">
+                            <img src="/resources/tacswitch.jpg" alt="tactile switch" />
+                            <p>Tactile Switch</p>
+                        </div>
+                        <div class="slds-col">
+                            <img src="/resources/clickswitch.jpg" alt="clicky switch" />
+                            <p>Clicky Switch</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="slds-col">
+                    <h1>Keycaps</h1>
+                </div>
+                <div class="slds-col">
+                    <div class="slds-grid">
+                        <div class="slds-col">
+                            <img src="/resources/cap1.jpg" alt="cap1" />
+                            <p>GMK Momo Yume</p>
+                        </div>
+                        <div class="slds-col">
+                            <img src="/resources/cap2.jpg" alt="cap2" />
+                            <p>GMK Nimbus</p>
+                        </div>
+                        <div class="slds-col">
+                            <img src="/resources/cap3.jpg" alt="cap3" />
+                            <p>GMK Chaos Theory</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+          <h1>Shopping Cart</h1>
+          <template iterator:it={itemList}>
+              <my-greeting key={it.value} item={it.value}></my-greeting>
+          </template>
+        </div>
+      </div>
 </template>
